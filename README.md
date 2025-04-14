@@ -5,12 +5,19 @@ This repository contains a Python script for simulating and analyzing Series A v
 **Key Features**
 
 Follow-On Comparison: Directly compares Series A portfolio returns across strategies with and without follow-on investments:
+
 No Follow-On: "Initial Investment" (20 companies at $575K each) and "Initial + Pro-Rata" (20 companies at $425K initial, $150K pro-rata).
+
 With Follow-On: "Initial + Pro-Rata + Follow-On" (20 companies at $300K initial, $75K pro-rata, $800K follow-on for 5 random from top 10), "Initial + Pro-Rata + Follow-On (10 Investments)" (20 companies at $300K initial, $75K pro-rata, $400K follow-on for top 10), and "Initial + Pro-Rata (12) + Follow-On (8)" (20 companies at $300K initial, $75K pro-rata for top 12, $575K follow-on for 8 random from top 10).
+
 Monte Carlo Simulations: Runs 10,000 simulations to model return distributions, capturing the effect of follow-on strategies on portfolio outcomes.
+
 Sensitivity Analysis: Tests three scenarios with varying failure rates (40%, 50%, 60%) to assess the robustness of follow-on vs. non-follow-on approaches.
+
 Statistical Testing: Uses Welch’s t-test to evaluate the statistical significance of return differences between the "Initial + Pro-Rata + Follow-On" strategy and the "Initial Investment" baseline.
+
 Visualization: Generates histograms for three key strategies ("Initial Investment", "Initial + Pro-Rata + Follow-On", "Initial + Pro-Rata (12) + Follow-On (8)"), highlighting return distributions for $11.5M and $13.85M fund sizes.
+
 Metrics: Outputs mean, median, 5th/95th percentiles, and probability of achieving a 3x fund return for each strategy.
 
 **Dependencies**
