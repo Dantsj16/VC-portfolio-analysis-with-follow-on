@@ -47,4 +47,5 @@ Random seed set for reproducibility (np.random.seed(42)).
 Designed to analyze the value of follow-on investments in venture capital but adaptable to other portfolio models.
 
 **License**
+
 MIT License
